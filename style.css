@@ -1,51 +1,49 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
-.header{
+.header {
     min-height: 100vh;
     width: 100%;
-    
 }
-nav{
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-.nav-links{
+.nav-links {
     flex: 1;
     text-align: right;
 }
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-body{
+body {
     background-color: #ff9900;
 }
-.nav-links ul li a{
+.nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
 }
-.nav-links ul li::after{
-   content: '';
-   width: 0%;
-   height: 2px;
-   background: black;
-   display: block;
-   margin: auto;
-   transition: 0.5s;
-
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
     width: 100%;
 }
-.teksti{
+.teksti {
     width: 90%;
     color: black;
     position: absolute;
@@ -54,14 +52,14 @@ body{
     transform: translate(-50%);
 }
 
-@media (max-width: 700px){
-    .teksti{
+@media (max-width: 700px) {
+    .teksti {
         font-size: 20px;
     }
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
     }
-    .nav-links{
+    .nav-links {
         position: absolute;
         height: 100vh;
         width: 200px;
@@ -70,9 +68,8 @@ body{
         text-align: left;
         z-index: 2;
     }
-
 }
-.tapahtumat{
+.tapahtumat {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -80,23 +77,23 @@ body{
     position: relative;
     top: -250px;
 }
-h1{
+h1 {
     font-size: 36px;
     font-weight: 600;
-   
 }
-p{
+p {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
-.row{
+.row {
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.col{
+.col {
     flex-basis: 31%;
     background: rgb(233, 172, 144);
     border-radius: 10px;
@@ -105,21 +102,37 @@ p{
     box-sizing: border-box;
 }
 .fa-facebook {
-    background: #3B5998;
+    background: #3b5998;
     color: white;
-  }
-  .fa-twitter {
-    background: #55ACEE;
+}
+.fa-twitter {
+    background: #55acee;
     color: white;
-  }
-  .fa-instagram {
+}
+.fa-instagram {
     background: #125688;
     color: white;
-  }
-  .fa {
+}
+.fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
-  }
+}
+.container {
+    margin-top: 400px;
+    margin-left: 70px;
+    display: flex;
+
+}
+.img-area {
+    text-align: center;
+    position: relative;
+}
+.img-area img {
+    width: 350px;
+    height: 350px;
+    padding: 5px;
+    object-fit: cover;
+}
